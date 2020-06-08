@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date_Time : "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textdate"
+        android:text="@string/example"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/textgps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:text="GPS Coordinates : "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_toEndOf="@id/textgps"
+        android:text="@string/example"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/textaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gps"
+        android:text="Address : "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gps"
+        android:layout_toEndOf="@id/textaddress"
+        android:text="@string/example"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/textarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:text="Est. Area of Pothole : "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_toEndOf="@id/textarea"
+        android:text="@string/example"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/textstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_below="@id/area"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/example"
+        android:layout_toEndOf="@id/textstatus"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_below="@id/area"
+        android:layout_margin="2dp"/>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_report_completion"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/status"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@id/yes"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
